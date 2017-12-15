@@ -12,6 +12,3 @@ class MySQL extends \mysqli {
         parent::__construct($this->server, $this->user, $this->passwd, $this->db, $this->port);
     }
 }
-
-$conexion = new MySQL();
-var_dump($conexion);
