@@ -1,6 +1,5 @@
 <?php
 namespace Src\Models;
-require '../app/mysql.php';
 use Src\App\MySQL;
 
 class User {
@@ -75,9 +74,3 @@ class User {
     }
     
 }
-
-$usuarios = User::all();
-var_dump($usuarios);
-
-$usuario = User::getById(1);
-var_dump($usuario);
