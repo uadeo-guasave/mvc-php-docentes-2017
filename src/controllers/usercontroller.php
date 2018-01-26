@@ -6,5 +6,6 @@ class UserController() {
     public function index() {
         $usuarios = User::all();
         require '../views/user/index.php';
+        View::make('user.index');
     }
 }
