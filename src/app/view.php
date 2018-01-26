@@ -16,5 +16,6 @@ class View {
                 $ruta += $x[$i].'/';
             }
         }
+        include $ruta;
     }
 }
