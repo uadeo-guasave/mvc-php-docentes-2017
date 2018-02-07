@@ -1,11 +1,18 @@
 <?php
 namespace Src\Controllers;
-use Src\Models;
 
-class UserController() {
+class UserController {
     public function index() {
-        $usuarios = User::all();
-        require '../views/user/index.php';
-        View::make('user.index');
+        $usuarios = Src\Models\User::all();
+
+        Src\App\View::make('user.index', compact('usuarios'));
+    }
+
+    public function login() {
+
+    }
+
+    public function edit($user_id) {
+        
     }
 }
