@@ -16,7 +16,7 @@ class View {
         }
 
         if (is_readable($ruta)) {
-            if ($params != null) {
+            if ($params) {
                 extract($params);
             }
             require_once $ruta;

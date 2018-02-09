@@ -1,11 +1,13 @@
 <?php
 namespace Src\Controllers;
+use Src\Models\User;
+use Src\App\View;
 
 class UserController {
     public function index() {
-        $usuarios = Src\Models\User::all();
+        $usuarios = User::all();
 
-        Src\App\View::make('user.index', compact('usuarios'));
+        View::make('user.index', compact('usuarios'));
     }
 
     public function login() {
